@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
+    base: mode === 'production' ? '/Tic-Tac-Toe_Game/' : '/',
     plugins: [
       react(),
       {
